@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require __DIR__ . "/../helper/header.php";
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .center {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-</head>
+<h1>hi mom</h1>
 
-<body>
-    asdsadasdas
-</body>
-
-</html>
+<?php
+require __DIR__ . "/../helper/footer.php";
+?>
