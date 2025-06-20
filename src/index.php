@@ -1,7 +1,11 @@
 <?php
 
+$db = new PDO("sqlite:" . __DIR__ . '/database.db');
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 $routes = [
-    "GET /" => __DIR__ . "/handler/index.php"
+    "GET /" => __DIR__ . "/handler/index.php",
+    "GET /penerima" => __DIR__ . "/handler/penerima.php"
 ];
 
 $requestMethod = $_SERVER['REQUEST_METHOD'];

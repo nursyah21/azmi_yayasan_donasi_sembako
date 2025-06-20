@@ -7,7 +7,7 @@
     <title>App Yayasan</title>
 
     <style>
-         * {
+        * {
             margin: 0;
             font-family: sans-serif;
         }
@@ -17,19 +17,55 @@
             margin: auto;
         }
 
+        .hidden {
+            display: none;
+        }
+
+        .modal {
+            display: flex;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, .6);
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+        
+        .modal-content {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: .5rem;
+            min-width: 600px;
+        }
+
         body {
-            background-color: #f4f6f8;
+            background-color: rgb(244, 246, 248);
             color: #333;
             padding: 2rem;
         }
 
+        button {
+            background-color: rgb(52, 152, 219);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+
+        button:hover {
+            background-color: rgba(52, 152, 219, 0.5);
+        }
+
         h1 {
-            margin-bottom: 1.5rem;
             font-size: 1.8rem;
             color: #2c3e50;
         }
 
         table {
+            margin-top: 1rem;
             width: 100%;
             border-collapse: collapse;
             background-color: #fff;
@@ -39,7 +75,7 @@
         }
 
         thead {
-            background-color: #3498db;
+            background-color: rgb(52, 152, 219);
             color: white;
         }
 
@@ -55,5 +91,5 @@
         }
     </style>
 </head>
+
 <body>
-    
