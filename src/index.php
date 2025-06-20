@@ -1,8 +1,7 @@
 <?php
 
 $routes = [
-    "GET /" => __DIR__ . "/handler/index.php",
-    "GET /styles.css" => __DIR__ . "/handler/styles.php"
+    "GET /" => __DIR__ . "/handler/index.php"
 ];
 
 $requestMethod = $_SERVER['REQUEST_METHOD'];
